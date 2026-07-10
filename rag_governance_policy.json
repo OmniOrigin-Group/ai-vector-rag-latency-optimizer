@@ -1,0 +1,17 @@
+{
+  "rag_pipeline_governance": {
+    "version": "4.2.1",
+    "infrastructure_saving_mode": "maximum_efficiency",
+    "vector_search_constraints": {
+      "target_vector_database": "Pinecone_or_Milvus_Cluster",
+      "distance_metric": "cosine_similarity",
+      "strict_similarity_threshold": 0.88,
+      "enable_product_quantization": true
+    },
+    "llm_context_safety_guardrails": {
+      "max_allowed_context_tokens": 2048,
+      "drop_duplicate_semantic_nodes": true,
+      "circuit_breaker_latency_timeout_ms": 150
+    }
+  }
+}
